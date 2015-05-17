@@ -48,3 +48,23 @@ $(function () {
         }]
     });
 });
+
+var frm = document.getElementById('dynamicAdd');
+
+frm.addEventListener('submit', plotPoint);
+
+function plotPoint(e) {
+    var month,
+        temp,
+        series;
+
+    // Prevent form submitting.
+    e.preventDefault();
+
+    month = e.target.elements["month"].value;
+    temp = parseInt(e.target.elements["temp"].value, 10);
+    series = parseInt(e.target.elements["series"].value);
+
+    // Add new point.
+    $('#container').highcharts().series[series].addPoint([month, temp]);
+}
