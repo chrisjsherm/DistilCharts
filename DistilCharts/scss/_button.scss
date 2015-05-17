@@ -1,0 +1,21 @@
+﻿.button-group {
+    float: none;
+
+    @media #{$small-only} {
+        float: right;
+    }
+
+    li {
+        padding-top: 3%;
+    }
+
+    a {
+        color: rgba(0, 0, 0, 1);
+        background-color: transparent;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.4);
+            background-color: transparent;
+        }
+    }
+}

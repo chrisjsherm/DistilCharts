@@ -1,0 +1,10 @@
+﻿footer {
+    padding: 80px 0 10px 0;
+
+    a {
+        &:hover {
+            color: rgba(0, 0, 0, 0.4);
+            background-color: transparent;
+        }
+    }
+}

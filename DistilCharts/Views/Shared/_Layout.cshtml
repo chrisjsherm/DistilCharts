@@ -1,0 +1,38 @@
+﻿@using System.Web.Optimization
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@System.Configuration.ConfigurationManager.AppSettings["AppName"]</title>
+    <meta name="description" content="" />
+    <meta name="application-name" content="@System.Configuration.ConfigurationManager.AppSettings["AppName"]">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
+
+    @Styles.Render("~/css/styles")
+    @Scripts.Render("~/scripts/modernizrlib")
+</head>
+
+<body>
+    @*Begin Google Analytics tracking code.*@
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', '@System.Configuration.ConfigurationManager.AppSettings["GoogleAnalyticsTrackingId"]', 'auto');
+        ga('send', 'pageview');
+    </script>
+    @*End Google Analytics tracking code.*@
+
+    @RenderBody()
+
+    @Scripts.Render("~/scripts/vendor")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

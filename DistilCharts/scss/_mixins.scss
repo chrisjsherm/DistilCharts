@@ -1,0 +1,9 @@
+﻿@mixin list-bottom-margin {
+    li {
+        &:first-child {
+            margin-top: 0;
+        }
+
+        margin-top: emCalc(25px);
+    }
+}
