@@ -129,6 +129,7 @@
     <Content Include="foundation\Gruntfile.js" />
     <Content Include="foundation\robots.txt" />
     <Content Include="Global.asax" />
+    <Content Include="images\bright-squares.png" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\fastclick\lib\fastclick.js" />
     <Content Include="Scripts\foundation\js\foundation.js" />
@@ -393,18 +394,6 @@
     <Content Include="scss\_settings.scss" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scss\_button.scss" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="scss\_logo.scss" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="scss\_content.scss" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="scss\_footer.scss" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="scss\_app-settings.scss" />
   </ItemGroup>
   <ItemGroup>
@@ -421,6 +410,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\data.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scss\_fieldset.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scss\_button.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scss\_form.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scss\_content.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,24 +1,55 @@
 ﻿<div class="row">
     <div class="small-12 columns">
+        <h1 class="app-heading">
+            Distil<span>Charts</span>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 columns">
         <div id="container"></div>
     </div>
 </div>
 
 <div class="row">
     <div class="small-12 columns">
-        <form id="dynamicAdd">
-            <input type="number" name="requests" required />
-            <input type="date" name="date" required />
+        <fieldset>
+            <h4>
+                Add a data point
+            </h4>
 
-            <input type="radio" name="series" value="0"
-                   checked="checked" />Human
-            <input type="radio" name="series" value="1" />Good
-            <input type="radio" name="series" value="2" />Bad
-            <input type="radio" name="series" value="3" />Whitelist
+            <form id="dynamicAdd" class="hide">
+                <div class="row">
+                    <div class="small-6 columns">
+                        <label for="requests">Number of requests</label>
+                        <input type="number" name="requests" required />
+                    </div>
+                </div>
 
-            <button type="submit">
-                Add
-            </button>
-        </form>
+                <div class="row">
+                    <div class="small-8 columns">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label for="series">Request type</label>
+                        <input type="radio" name="series" value="0"
+                               checked="checked" />Human
+                        <input type="radio" name="series" value="1" />Good
+                        <input type="radio" name="series" value="2" />Bad
+                        <input type="radio" name="series" value="3" />Whitelist
+                    </div>
+                </div>
+
+                <button type="submit" class="text-button">
+                    Add
+                </button>
+            </form>
+        </fieldset>
+
     </div>
 </div>

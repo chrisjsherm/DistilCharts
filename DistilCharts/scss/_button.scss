@@ -1,21 +1,11 @@
-﻿.button-group {
-    float: none;
+﻿.text-button {
+	border: emCalc(2px) solid $primary-color;
+	background-color: transparent;
+    color: $primary-color;
+	font-size: 1.25em;
+    font-weight: bold;
+    margin-top: emCalc(15px);
+    margin-bottom: 0;
+	padding: emCalc(5px);
 
-    @media #{$small-only} {
-        float: right;
-    }
-
-    li {
-        padding-top: 3%;
-    }
-
-    a {
-        color: rgba(0, 0, 0, 1);
-        background-color: transparent;
-
-        &:hover {
-            color: rgba(0, 0, 0, 0.4);
-            background-color: transparent;
-        }
-    }
 }

@@ -15,7 +15,14 @@
 </head>
 
 <body>
-    @RenderBody()
+
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="view-background">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
 
     @Scripts.Render("~/scripts/vendor")
     @RenderSection("scripts", required: false)

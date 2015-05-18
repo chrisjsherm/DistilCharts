@@ -53,6 +53,8 @@
                 data: whitelist
             }]
         });
+
+        frm.className = '';
     });
 
     function get(url) {

@@ -1,0 +1,10 @@
+﻿input[type=radio] {
+    margin-left: emCalc(15px);
+    margin-right: emCalc(2px);
+}
+
+.blocked {
+    @media #{$small-only} {
+        display: block;
+    }
+}
