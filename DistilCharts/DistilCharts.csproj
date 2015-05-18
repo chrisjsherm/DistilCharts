@@ -130,6 +130,7 @@
     <Content Include="foundation\robots.txt" />
     <Content Include="Global.asax" />
     <Content Include="images\bright-squares.png" />
+    <Content Include="index.html" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\fastclick\lib\fastclick.js" />
     <Content Include="Scripts\foundation\js\foundation.js" />
@@ -364,6 +365,7 @@
     <Content Include="Scripts\modernizr\test\js\unit.js" />
     <Content Include="Scripts\modernizr\test\qunit\qunit.js" />
     <Content Include="Scripts\modernizr\test\qunit\run-qunit.js" />
+    <Content Include="Scripts\vendor.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

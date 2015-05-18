@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distil Charts</title>
+    <meta name="description" content="" />
+    <meta name="application-name" content="Distil Charts">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/app.css" />
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="view-background">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h1 class="app-heading">
+                            Distil<span>Charts</span>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div id="container"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <fieldset>
+                            <h4>
+                                Add a data point
+                            </h4>
+
+                            <form id="dynamicAdd" class="hide">
+                                <div class="row">
+                                    <div class="small-6 columns">
+                                        <label for="requests">Number of requests</label>
+                                        <input type="number" name="requests" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="small-8 columns">
+                                        <label for="date">Date</label>
+                                        <input type="date" name="date" required />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <label for="series">Request type</label>
+                                        <input type="radio" name="series" value="0"
+                                               checked="checked" />Human
+                                        <input type="radio" name="series" value="1" />Good
+                                        <input type="radio" name="series" value="2" />Bad
+                                        <input type="radio" name="series" value="3" />Whitelist
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="text-button">
+                                    Add
+                                </button>
+                            </form>
+                        </fieldset>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/Scripts/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/Scripts/fastclick/lib/fastclick.js"></script>
+    <script type="text/javascript" src="/Scripts/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="/Scripts/highcharts//exporting.js"></script>
+    <script type="text/javascript" src="/Scripts/app.js"></script>
+</body>
+</html>

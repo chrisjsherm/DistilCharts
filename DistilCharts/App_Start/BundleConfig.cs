@@ -27,7 +27,6 @@ namespace DistilCharts
                   .Include("~/scripts/foundation/js/vendor/jquery.js")
 
                   .Include("~/scripts/foundation/js/vendor/fastclick.js")
-                  .Include("~/scripts/foundation/js/foundation/foundation.js")
 
                   .Include("~/scripts/highcharts/highcharts.js")
                   .Include("~/scripts/highcharts/exporting.js")

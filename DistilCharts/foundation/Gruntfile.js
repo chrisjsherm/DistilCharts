@@ -52,6 +52,23 @@ module.exports = function(grunt) {
         },
     },
 
+    concat: {
+        options: {
+            // define a string to put between each file in the concatenated output
+            separator: ';'
+        },
+        dist: {
+            // the files to concatenate
+            src: ['../scripts/foundation/js/vendor/jquery.js',
+            '/scripts/foundation/js/vendor/fastclick.js',
+            '/scripts/highcharts/highcharts.js',
+            '/scripts/highcharts/exporting.js',
+            '/scripts/app.js'],
+            // the location of the resulting JS file
+            dest: '../scripts/vendor.js'
+        }
+    },
+
     sass: {
         options: {
             includePaths: ['bower_components/foundation/scss']
@@ -68,19 +85,19 @@ module.exports = function(grunt) {
 
     watch: {
         grunt: { files: ['Gruntfile.js'] },
-
         sass: {
             files: '../scss/**/*.scss',
-            tasks: ['sass']
+            tasks: ['sass', 'concat']
         }
     }
   });
 
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
 
-  grunt.registerTask('build', ['sass', 'copy']);
+  grunt.registerTask('build', ['sass', 'copy', 'concat']);
   grunt.registerTask('default', ['browserSync:dev', 'watch']);
 }
