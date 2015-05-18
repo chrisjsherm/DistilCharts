@@ -132,6 +132,7 @@
     <Content Include="images\bright-squares.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\promise-polyfill.js" />
     <Content Include="Scripts\fastclick\lib\fastclick.js" />
     <Content Include="Scripts\foundation\js\foundation.js" />
     <Content Include="Scripts\foundation\js\foundation.min.js" />

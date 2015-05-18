@@ -25,6 +25,7 @@ namespace DistilCharts
             bundles.Add(
                 new ScriptBundle("~/scripts/vendor")
                   .Include("~/scripts/foundation/js/vendor/jquery.js")
+                  .Include("~/scripts/promise-polyfill.js")
 
                   .Include("~/scripts/foundation/js/vendor/fastclick.js")
 
